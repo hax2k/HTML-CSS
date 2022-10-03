@@ -1,0 +1,46 @@
+.container {
+    max-width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* transition */
+    transition-property: height, width, border-radius, font-size;
+    transition-duration: 0.5s;
+    /* transition-timing-function: ease; */
+
+    /* Animation */
+    animation-name: hax2k;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes hax2k {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box:hover {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    font-size: 32px;
+}
