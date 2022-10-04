@@ -30,7 +30,12 @@
 
 @keyframes hax2k {
     0% {
-        transform: rotate(0);
+        transform: rotate(0),scale(0);
+    }
+
+    50% {
+        transform:rotate(180deg)scale(4);
+        border-radius: 50%;
     }
 
     100% {
